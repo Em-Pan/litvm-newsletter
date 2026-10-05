@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+  <title>${title}</title>
+  <style>
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #f4f4f4; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; }
+    a { text-decoration: none; }
+    img.fluid-img { width: 100% !important; max-width: 100% !important; height: auto !important; }
+    .highlight-row img.fluid-img { height: 150px !important; object-fit: cover !important; object-position: center center !important; }
+    .text-card { min-height: 150px; }
+    @media only screen and (max-width: 620px) {
+      table[class="email-container"], .email-container { display: block !important; width: 100% !important; max-width: 100% !important; min-width: 0 !important; }
+      table[class="email-container"] > tbody, .email-container > tbody { display: block !important; width: 100% !important; }
+      .email-container > tbody > tr { display: block !important; width: 100% !important; }
+      .email-container > tbody > tr > td { display: block !important; width: auto !important; box-sizing: border-box !important; }
+      .mobile-pad { padding-left: 24px !important; padding-right: 24px !important; }
+      .highlight-row { display: block !important; width: 100% !important; }
+      .highlight-col { display: block !important; width: 100% !important; max-width: 100% !important; padding-bottom: 30px !important; }
+      .highlight-row img.fluid-img { height: 180px !important; }
+      .highlight-gap { display: none !important; width: 0 !important; height: 0 !important; }
+      .stat-col { display: block !important; width: 100% !important; border-right: 0 !important; border-bottom: 1px solid rgba(255,255,255,.18) !important; box-sizing: border-box !important; }
+    }
+  </style>
+</head>
+<body style="margin:0;padding:0;background-color:#f4f4f4;width:100%;">
+  <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">${preheader}</div>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#f4f4f4;">
+    <tr><td align="center" style="padding:20px 0 30px 0;">
+      <table class="email-container" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;max-width:600px;background-color:#ffffff;">
+        
+        <!-- HEADER -->
+        <tr><td align="center" style="padding:15px 30px;background-color:#40758d;">
+          <a href="https://www.litvm.com/" target="_blank" style="display:inline-block;text-decoration:none;"><img src="https://cdn.jsdelivr.net/gh/Em-Pan/litvm-assets@main/images/litvm-logo.png" width="115" alt="LitVM" style="display:block;outline:0;line-height:100%;width:115px;height:auto;border:0;margin:0 auto;"></a>
+        </td></tr>
+        
+        <!-- HERO BANNER -->
+        <tr><td align="center" style="background-color:#11303d;">
+          <a href="https://www.litvm.com/" target="_blank" style="display:block;text-decoration:none;"><img src="${bannerImage}" width="600" alt="LitVM September 2026" class="fluid-img" style="display:block;width:100%;max-width:600px;height:auto;border:0;line-height:100%;margin:0;"></a>
+        </td></tr>
+
+        <!-- INTRO -->
+        <tr><td class="mobile-pad" style="padding:34px 40px 24px;background-color:#ffffff;">
+          <p style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#636b70;margin:0 0 14px 0;"><strong style="color:#11303d;">Hey LitVM fam,</strong></p>
+          <p style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#636b70;margin:0 0 14px 0;">September continued our momentum with builder workshops, demo days, and major ecosystem conversations driving the Litecoin meta forward.</p>
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="margin:18px auto 0 auto;"><tr><td align="center"><a href="${TESTNET}" target="_blank" style="display:inline-block;background-color:#418aca;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;line-height:20px;padding:11px 18px;border-radius:7px;text-decoration:none;letter-spacing:.01em;">Explore the LiteForge Testnet</a></td></tr></table>
+        </td></tr>
+
+        ${divider()}
+        
+        ${sectionTitle('September Highlights')}
+        ${featureCard(mode)}
+        ${highlightGrid(mode)}
+        
+        ${divider()}
+        ${sectionTitle('Community & Press')}
+        ${additionalCards(mode)}
+
+        <!-- FOOTER -->
+        <tr><td style="padding:0;background-color:#ffffff;"><hr style="border:none;border-top:2px solid #d9d9d9;margin:0;"></td></tr>
+        <tr><td align="center" style="padding:30px 40px 40px 40px;background-color:#f7fafb;">
+          <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;color:#8f989d;margin:0 0 12px 0;"><strong>LitVM</strong><br>Hard Money Web3</div>
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto 20px auto;">
+            <tr>
+              <td style="padding:0 8px;"><a href="https://x.com/LitecoinVM" target="_blank" style="color:#418aca;text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;">X (Twitter)</a></td>
+              <td style="padding:0 8px;"><a href="https://discord.com/invite/p5uh2Hg5xJ" target="_blank" style="color:#418aca;text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;">Discord</a></td>
+              <td style="padding:0 8px;"><a href="https://www.litvm.com/" target="_blank" style="color:#418aca;text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;">Website</a></td>
+            </tr>
+          </table>
+          <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:16px;color:#a8b0b5;">You are receiving this email because you opted in at LitVM.com.<br><a href="{{{unsubscribe}}}" style="color:#a8b0b5;text-decoration:underline;">Unsubscribe</a></div>
+        </td></tr>
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>
